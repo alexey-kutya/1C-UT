@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="a0cd7417-fda4-437a-a177-7080b34eec15">
+		<Name>ЗарплатаИУправлениеПерсоналом</Name>
+		<Code>000000002</Code>
+		<Description>ЗУП</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3d873abf-54a4-4a51-aa66-59be72a5ea94">
+		<Name>KT2000_Alcohol_Mnfc</Name>
+		<Code>000000001</Code>
+		<Description>КТ-2000 Алкоголь</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="16254a1a-af5c-43dc-a117-1513d543173c">
+		<Name>СО</Name>
+		<Code>000000004</Code>
+		<Description>Сводная отчетность</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="afffe60f-c31e-4780-a5f6-27ab74c0d3d4">
+		<Name>УТ</Name>
+		<Code>000000003</Code>
+		<Description>Управление тестированием</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

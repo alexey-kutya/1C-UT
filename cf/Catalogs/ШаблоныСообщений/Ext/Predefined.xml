@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="0f59883b-ec13-459a-aefc-a1c98a2bd689">
+		<Name>ДобавлениеВнешнейОбработки</Name>
+		<Code>0000000001</Code>
+		<Description>Добавление внешней обработки</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9a36ed89-ce75-4158-92a2-f2ca7f52e110">
+		<Name>ДобавлениеВнешнейОбработкиТекстЗадачи</Name>
+		<Code>0000000007</Code>
+		<Description>Добавление внешней обработки (текст задачи)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5abc794f-8576-4eae-99df-b2b4e2138915">
+		<Name>ДоработкаВнешнейОбработки</Name>
+		<Code>0000000003</Code>
+		<Description>Доработка внешней обработки</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="53b4b700-cb1e-4bae-ba3b-a7be47a3c323">
+		<Name>ДоработкаВнешнейОбработкиТекстЗадачи</Name>
+		<Code>0000000008</Code>
+		<Description>Доработка внешней обработки (текст задачи)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="61c54d66-454b-4d2d-bdd2-2e9f515f8373">
+		<Name>ЗапросНаСозданиеФункции</Name>
+		<Code>0000000023</Code>
+		<Description>Запрос на создание функции</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e35ee05e-3e7e-4bdd-b5ba-3c8d02110c5e">
+		<Name>ОтветНаНекорректноеСообщение</Name>
+		<Code>0000000019</Code>
+		<Description>Ответ на некорректное сообщение</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="969b032c-97b3-4a56-afbd-bebb3366c95e">
+		<Name>ОтклонениеИзменения</Name>
+		<Code>0000000015</Code>
+		<Description>Отклонение изменения</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0e553670-9444-4314-b106-089a6bebd97d">
+		<Name>ОтклонениеОбращения</Name>
+		<Code>0000000004</Code>
+		<Description>Отклонение обращения</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5806ea35-f564-457b-a0b1-401969276561">
+		<Name>ПеренаправлениеЗадачи</Name>
+		<Code>0000000006</Code>
+		<Description>Перенаправление задачи</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9addaed5-34ba-4d60-8cb5-438bba6ccf35">
+		<Name>СогласованиеИзменения</Name>
+		<Code>0000000014</Code>
+		<Description>Согласование изменения</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8f52b2cf-bff5-4112-852b-9990b8b04a59">
+		<Name>СсылкаНаИнструкцию</Name>
+		<Code>0000000022</Code>
+		<Description>Ссылка на инструкцию</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="12fb146c-6765-40fa-b073-aa19a8d67b17">
+		<Name>ТестированиеВнешнейОбработки</Name>
+		<Code>0000000002</Code>
+		<Description>Тестирование внешней обработки</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6453a0c9-8bce-4288-8223-68b22c965b32">
+		<Name>ТестированиеВнешнейОбработкиТекстЗадачи</Name>
+		<Code>0000000009</Code>
+		<Description>Тестирование внешней обработки (текст задачи)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="af0d5f05-dba9-4617-8c83-3daa40e924f7">
+		<Name>ТестированиеИзмененияКонфигурации</Name>
+		<Code>0000000013</Code>
+		<Description>Тестирование изменения конфигурации</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5783e481-414b-4ecf-8db4-0aa456d5a36d">
+		<Name>ТестированиеИзмененияКонфигурацииТекстЗадачи</Name>
+		<Code>0000000018</Code>
+		<Description>Тестирование изменения конфигурации (текст задачи)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1b00f53b-4a4b-47b8-93af-2bead0041067">
+		<Name>ТестированиеИзмененияКонфигурацииЗУП</Name>
+		<Code>0000000020</Code>
+		<Description>Тестирование изменения конфигурации ЗУП</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cb6f1549-5ab6-42a2-a3e2-cdeefeb714b0">
+		<Name>ТестированиеИзмененияКонфигурацииТекстЗадачиЗУП</Name>
+		<Code>0000000021</Code>
+		<Description>Тестирование изменения конфигурации ЗУП (текст задачи)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="59091aa5-f3f3-49da-9d55-e8fa899b533d">
+		<Name>УведомлениеОВыгрузке</Name>
+		<Code>0000000010</Code>
+		<Description>Уведомление о выгрузке</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="fc3b084b-29df-4264-b5cd-2c575ee91f1b">
+		<Name>УведомлениеОПеревыпуске</Name>
+		<Code>0000000016</Code>
+		<Description>Уведомление о перевыпуске</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0695db9f-543a-4631-b7ab-92a7b69b5c2e">
+		<Name>УведомлениеОПеревыпускеОткат</Name>
+		<Code>0000000017</Code>
+		<Description>Уведомление о перевыпуске ОТКАТ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3ea57918-75e2-48e8-86ca-fafe4655a234">
+		<Name>УведомлениеОПодпискеНаРассылкуОбИзмененияхРелизов</Name>
+		<Code>0000000025</Code>
+		<Description>Уведомление о подписке на рассылку об изменениях релизов</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="03c4a166-a5ce-499e-ab70-bbdafba0534e">
+		<Name>УведомлениеОПроблемеНаHelpDesk</Name>
+		<Code>0000000012</Code>
+		<Description>Уведомление о проблеме на Help Desk</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b0c82c31-d754-478d-8299-782c3b6fb043">
+		<Name>УведомлениеОбИзмененияхВРелизе</Name>
+		<Code>0000000024</Code>
+		<Description>Уведомление об изменениях в релизе</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c9c5a6e2-e399-4636-aee9-d9b3419a3a1f">
+		<Name>УведомлениеПользователяОПроблеме</Name>
+		<Code>0000000011</Code>
+		<Description>Уведомление пользователя о проблеме</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c78879f5-175b-491c-920b-fcd18cf6bebd">
+		<Name>УспешноеСогласование</Name>
+		<Code>0000000005</Code>
+		<Description>Успешное согласование</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

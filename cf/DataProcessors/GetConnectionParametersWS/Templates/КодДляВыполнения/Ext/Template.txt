@@ -1,0 +1,21 @@
+﻿WSСсылка = "http://xdto.rusalcohol.local/UT_W_2014/ws/ConnectionParametersWS.1cws?wsdl";
+WSПользователь = "webRusalco";
+WSПароль = "webRusalco123";
+	
+Определения = Новый WSОпределения(WSСсылка, WSПользователь, WSПароль);
+Прокси = Новый WSПрокси(Определения, "http://www.roust.com/ConnectionParametersWS", "ConnectionParametersWS", "ConnectionParametersWSSoap");
+Прокси.Пользователь = WSПользователь;
+Прокси.Пароль = WSПароль;
+	
+//ЗДЕСЬ ЗАПОЛНЯЕТСЯ МАССИВ БАЗ ДЛЯ ОТБОРА
+//ДЛЯ ПОЛУЧЕНИЯ ПОЛНОГО СПИСКА БАЗ ПЕРЕДАВАЙТЕ ПУСТОЙ МАССИВ
+МассивБаз = Новый Массив;
+Для каждого СтрокаБаза Из СписокБаз Цикл
+	Если СтрокаБаза.Пометка Тогда
+		МассивБаз.Добавить(СтрокаБаза.BaseID);
+	КонецЕсли; 
+КонецЦикла; 
+ПараметрыОбъектXDTO = СериализаторXDTO.ЗаписатьXDTO(МассивБаз);
+	
+ConnectionParametersWS = Прокси.GetValueTable(ПараметрыОбъектXDTO);
+ТаблицаДанныхWS.Загрузить(СериализаторXDTO.ПрочитатьXDTO(ConnectionParametersWS));

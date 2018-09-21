@@ -1,0 +1,40 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.rusalco.com/omni">
+	<property name="Data">
+		<typeDef xsi:type="ObjectType">
+			<property xmlns:d4p1="http://www.rusalco.com/omni" name="Ticket" type="d4p1:TicketType" upperBound="-1"/>
+		</typeDef>
+	</property>
+	<objectType name="TicketType">
+		<property name="Группа" type="xs:string"/>
+		<property name="Группа_Номер" type="xs:string"/>
+		<property name="Затронутый_пользователь_Email" type="xs:string" localName="Затронутый_пользователь_E-mail"/>
+		<property name="Затронутый_пользователь_LoginDomain" type="xs:string"/>
+		<property name="Затронутый_пользователь_Имя" type="xs:string"/>
+		<property name="Затронутый_пользователь_Компания" type="xs:string"/>
+		<property name="Затронутый_пользователь_Номер" type="xs:string"/>
+		<property name="Затронутый_пользователь_Основной__адрес_Площадка" type="xs:string"/>
+		<property name="Затронутый_пользователь_Фамилия" type="xs:string"/>
+		<property name="Заявитель_Email" type="xs:string" localName="Заявитель_E-mail"/>
+		<property name="Заявитель_LoginDomain" type="xs:string"/>
+		<property name="Заявитель_Имя" type="xs:string"/>
+		<property name="Заявитель_Компания" type="xs:string"/>
+		<property name="Заявитель_Номер" type="xs:string"/>
+		<property name="Заявитель_Площадка" type="xs:string"/>
+		<property name="Заявитель_Телефон" type="xs:string"/>
+		<property name="Заявитель_Фамилия" type="xs:string"/>
+		<property name="Исполнитель" type="xs:string"/>
+		<property name="Исполнитель_Email" type="xs:string" localName="Исполнитель_E-mail"/>
+		<property name="Исполнитель_LoginDomain" type="xs:string"/>
+		<property name="Исполнитель_Имя" type="xs:string"/>
+		<property name="Исполнитель_Номер" type="xs:string"/>
+		<property name="Исполнитель_Телефон" type="xs:string"/>
+		<property name="Исполнитель_Фамилия" type="xs:string"/>
+		<property name="Категория_Object_Name" type="xs:string"/>
+		<property name="Категория_Код" type="xs:string"/>
+		<property name="Компания_Номер" type="xs:string"/>
+		<property name="Краткое_описание" type="xs:string"/>
+		<property name="Номер_обращения" type="xs:string"/>
+		<property name="Описание" type="xs:string"/>
+		<property name="Создано" type="xs:dateTime"/>
+	</objectType>
+</package>

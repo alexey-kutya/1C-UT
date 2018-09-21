@@ -1,0 +1,13 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.roust.com/ConnectionParametersWS">
+	<property xmlns:d2p1="http://www.roust.com/ConnectionParametersWS" name="ConnectionParametersWS" type="d2p1:ConnectionParametersWS"/>
+	<objectType name="ConnectionParametersWS">
+		<property xmlns:d3p1="http://www.roust.com/ConnectionParametersWS" name="SetOfParameters" type="d3p1:SetOfParameters" upperBound="-1"/>
+	</objectType>
+	<objectType name="SetOfParameters">
+		<property name="BaseID" type="xs:string"/>
+		<property name="BaseDescription" type="xs:string"/>
+		<property name="LocationWSDL" type="xs:string"/>
+		<property name="User" type="xs:string"/>
+		<property name="Password" type="xs:string"/>
+	</objectType>
+</package>

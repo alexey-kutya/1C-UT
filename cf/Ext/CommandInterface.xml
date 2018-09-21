@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<SubsystemsVisibility>
+		<Subsystem name="Subsystem.Администрирование">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПотребительУслуг">false</xr:Value>
+				<xr:Value name="Role.Разработчик">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Visibility>
+		</Subsystem>
+		<Subsystem name="Subsystem.ВнешниеОтчетыИОбработки">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПотребительУслуг">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.Разработчик">false</xr:Value>
+			</Visibility>
+		</Subsystem>
+		<Subsystem name="Subsystem.ИзменениеКонфигурации">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПотребительУслуг">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.Разработчик">false</xr:Value>
+			</Visibility>
+		</Subsystem>
+		<Subsystem name="Subsystem.Сервисы">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.Разработчик">false</xr:Value>
+			</Visibility>
+		</Subsystem>
+	</SubsystemsVisibility>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem.Администрирование</Subsystem>
+		<Subsystem>Subsystem.ВнешниеОтчетыИОбработки</Subsystem>
+		<Subsystem>Subsystem.ИзменениеКонфигурации</Subsystem>
+		<Subsystem>Subsystem.БазаЗнаний</Subsystem>
+		<Subsystem>Subsystem.Сервисы</Subsystem>
+		<Subsystem>Subsystem.Функции</Subsystem>
+	</SubsystemsOrder>
+</CommandInterface>

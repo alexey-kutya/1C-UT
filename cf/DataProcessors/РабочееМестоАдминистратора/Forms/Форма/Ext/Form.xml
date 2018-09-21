@@ -1,0 +1,610 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="56">
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="57"/>
+			<ChildItems>
+				<UsualGroup name="Группа6" id="84">
+					<Group>Horizontal</Group>
+					<ShowTitle>false</ShowTitle>
+					<BackColor>web:LightGoldenRod</BackColor>
+					<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="85"/>
+					<ChildItems>
+						<UsualGroup name="Группа3" id="78">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>web:Salmon</BackColor>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="79"/>
+							<ChildItems>
+								<InputField name="Релиз" id="46">
+									<DataPath>Релиз</DataPath>
+									<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<HorizontalStretch>false</HorizontalStretch>
+									<DropListButton>false</DropListButton>
+									<ChoiceButton>true</ChoiceButton>
+									<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+									<ClearButton>true</ClearButton>
+									<Font ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+									<ContextMenu name="РелизКонтекстноеМеню" id="47"/>
+									<ExtendedTooltip name="РелизРасширеннаяПодсказка" id="48"/>
+									<Events>
+										<Event name="OnChange">РелизПриИзменении</Event>
+									</Events>
+								</InputField>
+								<Button name="СформироватьОтчет" id="105">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Command.СформироватьОтчет</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Report</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="СформироватьОтчетРасширеннаяПодсказка" id="106"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа2" id="96">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>web:CornFlowerBlue</BackColor>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="97"/>
+							<ChildItems>
+								<Button name="УстановитьРелиз" id="94">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.УстановитьРелиз</CommandName>
+									<ExtendedTooltip name="УстановитьРелизРасширеннаяПодсказка" id="95"/>
+								</Button>
+								<Button name="ОтправитьНаТестирование" id="92">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ОтправитьНаТестирование</CommandName>
+									<ExtendedTooltip name="ОтправитьНаТестированиеРасширеннаяПодсказка" id="93"/>
+								</Button>
+								<Button name="СнятьСТестирования" id="98">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.СнятьСТестирования</CommandName>
+									<ExtendedTooltip name="СнятьСТестированияРасширеннаяПодсказка" id="99"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа4" id="100">
+					<Group>Horizontal</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="101"/>
+					<ChildItems>
+						<CheckBoxField name="Отбор" id="70">
+							<DataPath>АвтоматическийОтбор</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Автоотбор</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<VerticalAlign>Top</VerticalAlign>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ОтборКонтекстноеМеню" id="71"/>
+							<ExtendedTooltip name="ОтборРасширеннаяПодсказка" id="72"/>
+							<Events>
+								<Event name="OnChange">ОтборПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<UsualGroup name="Группа9" id="90">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>web:PaleGreen</BackColor>
+							<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="91"/>
+							<ChildItems>
+								<RadioButtonField name="ПереключательВидОперации" id="73">
+									<DataPath>ПереключательВидОперации</DataPath>
+									<RadioButtonType>Tumbler</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Установить релиз</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">0</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Отправить на тестирование</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">1</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Снять с тестирования</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">2</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<ContextMenu name="ПереключательВидОперацииКонтекстноеМеню" id="74"/>
+									<ExtendedTooltip name="ПереключательВидОперацииРасширеннаяПодсказка" id="75"/>
+									<Events>
+										<Event name="OnChange">ПереключательВидОперацииПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="СписокИзменений" id="1">
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialListView>End</InitialListView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>СписокИзменений</DataPath>
+			<RowPictureDataPath>СписокИзменений.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокИзмененийКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокИзмененийКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="СписокИзмененийКнопка1" id="60">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Item.СписокИзменений.StandardCommand.Find</CommandName>
+						<ExtendedTooltip name="СписокИзмененийКнопка1РасширеннаяПодсказка" id="61"/>
+					</Button>
+					<Button name="СписокИзмененийКнопка2" id="62">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Item.СписокИзменений.StandardCommand.CancelSearch</CommandName>
+						<ExtendedTooltip name="СписокИзмененийКнопка2РасширеннаяПодсказка" id="63"/>
+					</Button>
+					<Button name="СписокИзмененийКнопка3" id="64">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Item.СписокИзменений.StandardCommand.SetDateInterval</CommandName>
+						<ExtendedTooltip name="СписокИзмененийКнопка3РасширеннаяПодсказка" id="65"/>
+					</Button>
+					<Button name="СписокИзмененийКнопка4" id="66">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Item.СписокИзменений.StandardCommand.Refresh</CommandName>
+						<ExtendedTooltip name="СписокИзмененийКнопка4РасширеннаяПодсказка" id="67"/>
+					</Button>
+					<Button name="СписокИзмененийКнопка5" id="68">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Item.СписокИзменений.StandardCommand.ListSettings</CommandName>
+						<ExtendedTooltip name="СписокИзмененийКнопка5РасширеннаяПодсказка" id="69"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокИзмененийРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="СписокИзмененийСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>СписокИзменений</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокИзмененийСтрокаПоискаКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="СписокИзмененийСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокИзмененийСостояниеПросмотра" id="10">
+				<AdditionSource>
+					<Item>СписокИзменений</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокИзмененийСостояниеПросмотраКонтекстноеМеню" id="13"/>
+				<ExtendedTooltip name="СписокИзмененийСостояниеПросмотраРасширеннаяПодсказка" id="14"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокИзмененийУправлениеПоиском" id="15">
+				<AdditionSource>
+					<Item>СписокИзменений</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокИзмененийУправлениеПоискомКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="СписокИзмененийУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="СписокИзмененийСсылка" id="20">
+					<DataPath>СписокИзменений.Ref</DataPath>
+					<ContextMenu name="СписокИзмененийСсылкаКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="СписокИзмененийСсылкаРасширеннаяПодсказка" id="22"/>
+				</LabelField>
+				<LabelField name="СписокИзмененийСостояние" id="35">
+					<DataPath>СписокИзменений.Состояние</DataPath>
+					<ContextMenu name="СписокИзмененийСостояниеКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="СписокИзмененийСостояниеРасширеннаяПодсказка" id="37"/>
+				</LabelField>
+				<LabelField name="СписокИзмененийРелиз" id="32">
+					<DataPath>СписокИзменений.Релиз</DataPath>
+					<ContextMenu name="СписокИзмененийРелизКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="СписокИзмененийРелизРасширеннаяПодсказка" id="34"/>
+				</LabelField>
+				<LabelField name="СписокИзмененийЗаказчик" id="23">
+					<DataPath>СписокИзменений.Заказчик</DataPath>
+					<ContextMenu name="СписокИзмененийЗаказчикКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="СписокИзмененийЗаказчикРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+				<LabelField name="СписокИзмененийИсполнитель" id="26">
+					<DataPath>СписокИзменений.Исполнитель</DataPath>
+					<ContextMenu name="СписокИзмененийИсполнительКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="СписокИзмененийИсполнительРасширеннаяПодсказка" id="28"/>
+				</LabelField>
+				<LabelField name="СписокИзмененийКонфигурация" id="51">
+					<DataPath>СписокИзменений.Конфигурация</DataPath>
+					<ContextMenu name="СписокИзмененийКонфигурацияКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="СписокИзмененийКонфигурацияРасширеннаяПодсказка" id="53"/>
+				</LabelField>
+				<CheckBoxField name="СписокИзмененийПовышенныйРиск" id="38">
+					<DataPath>СписокИзменений.ПовышенныйРиск</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СписокИзмененийПовышенныйРискКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="СписокИзмененийПовышенныйРискРасширеннаяПодсказка" id="40"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВысокаяТрудоёмкостьОтката" id="110">
+					<DataPath>СписокИзменений.ВысокаяТрудоёмкостьОтката</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВысокаяТрудоёмкостьОткатаКонтекстноеМеню" id="111"/>
+					<ExtendedTooltip name="ВысокаяТрудоёмкостьОткатаРасширеннаяПодсказка" id="112"/>
+				</CheckBoxField>
+				<CheckBoxField name="НовыеОбъекты" id="107">
+					<DataPath>СписокИзменений.НовыеОбъекты</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="НовыеОбъектыКонтекстноеМеню" id="108"/>
+					<ExtendedTooltip name="НовыеОбъектыРасширеннаяПодсказка" id="109"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РабочееМестоАдминистратора</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокИзменений" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список изменений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Document.ИзменениеКонфигурации</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>Состояние</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Состояние</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СостоянияИзмененийКонфигурации.Подготовлено</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:LightGoldenRod</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+							<dcsset:userSettingID>48345198-b985-494d-9ec9-d713979a517c</dcsset:userSettingID>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>Состояние</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Состояние</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СостоянияИзмененийКонфигурации.НаТестировании</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:LightBlue</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+							<dcsset:userSettingID>f85a47c6-7d91-49c4-9937-41b298c3eb36</dcsset:userSettingID>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>Состояние</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Состояние</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СостоянияИзмененийКонфигурации.Согласовано</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:PaleGreen</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+							<dcsset:userSettingID>1ae52a0f-d207-4e93-821d-b964ee68fdfe</dcsset:userSettingID>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>Состояние</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Состояние</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СостоянияИзмененийКонфигурации.Отклонено</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:Salmon</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+							<dcsset:userSettingID>e9e0759a-925b-443e-b426-8a5dfd4fe666</dcsset:userSettingID>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>Состояние</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Состояние</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СостоянияИзмененийКонфигурации.СнятоСТестирования</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:LightGray</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+							<dcsset:userSettingID>2a8f9c5b-bf05-4d41-9860-2e459121690a</dcsset:userSettingID>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>Состояние</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Состояние</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СостоянияИзмененийКонфигурации.КПеревыпуску</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:Goldenrod</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+							<dcsset:userSettingID>555e57a5-92f5-4829-a677-b1189f0862be</dcsset:userSettingID>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Релиз" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Релиз</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Релизы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АвтоматическийОтбор" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автоматический отбор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПереключательВидОперации" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид отбора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборДляОперацииУстановитьРелиз" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор для операции установить релиз</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборДляОперацииОтправитьНаТестирование" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор для операции отправить на тестирование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборДляОперацииСнятьСТестирования" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор для операции снять с тестирования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="УстановитьРелиз" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить релиз</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить релиз</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьОперацию</Action>
+		</Command>
+		<Command name="ОтправитьНаТестирование" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить на тестирование</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить на тестирование</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьОперацию</Action>
+		</Command>
+		<Command name="СнятьСТестирования" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять с тестирования</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять с тестирования</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьОперацию</Action>
+		</Command>
+		<Command name="СформироватьОтчет" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать отчет</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать отчет</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьОтчет</Action>
+		</Command>
+	</Commands>
+</Form>

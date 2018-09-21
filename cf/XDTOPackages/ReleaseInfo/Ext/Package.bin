@@ -1,0 +1,18 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.roust.com/ReleaseInfo">
+	<property xmlns:d2p1="http://www.roust.com/ReleaseInfo" name="ReleaseInfo" type="d2p1:ReleaseInfo"/>
+	<objectType name="Initiator">
+		<property name="Name" type="xs:string" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://www.roust.com/ReleaseInfo" name="Request" type="d3p1:Request" upperBound="-1"/>
+	</objectType>
+	<objectType name="Release">
+		<property name="Identity" type="xs:string" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://www.roust.com/ReleaseInfo" name="Initiator" type="d3p1:Initiator" upperBound="-1"/>
+	</objectType>
+	<objectType name="ReleaseInfo">
+		<property xmlns:d3p1="http://www.roust.com/ReleaseInfo" name="Release" type="d3p1:Release" upperBound="-1"/>
+	</objectType>
+	<objectType name="Request">
+		<property name="RequestNumber" type="xs:string"/>
+		<property name="Description" type="xs:string"/>
+	</objectType>
+</package>

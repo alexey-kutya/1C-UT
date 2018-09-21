@@ -1,0 +1,44 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.rusalco.com/xtdo">
+	<objectType name="ListOfArticleRow">
+		<property name="Article" type="xsd:string"/>
+	</objectType>
+	<objectType name="ListOfArticleRows">
+		<property xmlns:d3p1="http://www.rusalco.com/xtdo" lowerBound="0" name="Row" type="d3p1:ListOfArticleRow" upperBound="-1"/>
+	</objectType>
+	<objectType name="ParametresOfArticleOfNomenclatureRow">
+		<property name="Brand" type="xsd:string"/>
+		<property name="Sort" type="xsd:string"/>
+		<property name="Package" type="xsd:string"/>
+		<property name="Capacity" type="xsd:string"/>
+		<property name="TypeOfPacking" type="xsd:string"/>
+		<property name="Region" type="xsd:string"/>
+		<property name="Unit" type="xsd:string"/>
+		<property name="UnitOfRemains" type="xsd:string"/>
+		<property name="UnitOfReport" type="xsd:string"/>
+		<property name="UnitOfPacking" type="xsd:string"/>
+		<property name="GroupOfNomenclature" type="xsd:string"/>
+		<property name="FullName" type="xsd:string"/>
+		<property name="SortOfNomenclature" type="xsd:string"/>
+		<property name="NDS" type="xsd:string"/>
+		<property name="Strength" type="xsd:float"/>
+		<property name="TypeOfNomenclature" type="xsd:string"/>
+		<property name="SortOfProduction" type="xsd:string"/>
+		<property name="NumberOfModel" type="xsd:string"/>
+		<property name="DateOfModel" type="xsd:date"/>
+		<property name="StatusOfModel" type="xsd:string"/>
+		<property name="Weight" type="xsd:string"/>
+		<property name="PackingLevel1" type="xsd:string"/>
+		<property name="NumberOfPackingLevel1" type="xsd:decimal"/>
+		<property name="HeightOfPackingLevel1" type="xsd:string"/>
+		<property name="LengthOfPackingLevel1" type="xsd:string"/>
+		<property name="WidthOfPackingLevel1" type="xsd:string"/>
+		<property name="VolumeOfPackingLevel1" type="xsd:string"/>
+		<property name="VolumeOfPackingLevel2" type="xsd:string"/>
+		<property name="WeightOfPackingLevel2" type="xsd:string"/>
+		<property name="WeightOfPackingLevel1" type="xsd:string"/>
+		<property name="NumberOfPackingLevel2" type="xsd:string"/>
+	</objectType>
+	<objectType name="ParametresOfArticleOfNomenclatureRows">
+		<property xmlns:d3p1="http://www.rusalco.com/xtdo" lowerBound="0" name="Row" type="d3p1:ParametresOfArticleOfNomenclatureRow" upperBound="-1"/>
+	</objectType>
+</package>

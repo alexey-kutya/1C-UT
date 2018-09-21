@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/">
+<html> 
+<body>
+  <h2>Изменения в релизе</h2>
+  <xsl:for-each select="ReleaseInfo/Release">
+  <xsl:sort select="@Identity"/>
+    <h3 style="font-weight:bold; color: red"><xsl:value-of select="@Identity"/></h3>
+      <xsl:for-each select="Initiator">
+        <p style="font-weight:bold; background-color: #E1F896"><xsl:value-of select="@Name"/></p>
+          <xsl:for-each select="Request">
+            <p style="text-indent:50px"><b><xsl:value-of select="RequestNumber"/></b>
+            <span style='padding-left:10px;'></span><xsl:value-of select="Description"/></p>
+          </xsl:for-each>
+      </xsl:for-each>
+  </xsl:for-each>
+</body>
+</html>
+</xsl:template>
+</xsl:stylesheet>
+

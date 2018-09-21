@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<Group>Horizontal</Group>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="13">
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="14"/>
+			<ChildItems>
+				<UsualGroup name="Группа3" id="38">
+					<Group>Horizontal</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="39"/>
+					<ChildItems>
+						<InputField name="Код" id="1">
+							<DataPath>Объект.Code</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<CheckBoxField name="Обновляемая" id="35">
+							<DataPath>Объект.Обновляемая</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ОбновляемаяКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="ОбновляемаяРасширеннаяПодсказка" id="37"/>
+						</CheckBoxField>
+						<InputField name="Клиент" id="40">
+							<DataPath>Объект.Клиент</DataPath>
+							<ContextMenu name="КлиентКонтекстноеМеню" id="41"/>
+							<ExtendedTooltip name="КлиентРасширеннаяПодсказка" id="42"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Конфигурация" id="26">
+					<ContextMenu name="КонфигурацияКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="КонфигурацияРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ТипИнформационнойбазы" id="10">
+					<DataPath>Объект.ТипИнформационнойБазы</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТипИнформационнойбазыКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ТипИнформационнойбазыРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<InputField name="ВидИнформационнойБазы" id="32">
+					<DataPath>1/0:9490c252-aff3-45e6-9455-3a9370847085</DataPath>
+					<ContextMenu name="ВидИнформационнойБазыКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ВидИнформационнойБазыРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="КонфигурацияИБ" id="29">
+					<DataPath>Объект.КонфигурацияИБ</DataPath>
+					<ContextMenu name="КонфигурацияИБКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="КонфигурацияИБРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="BaseID" id="43">
+					<DataPath>Объект.BaseID</DataPath>
+					<ContextMenu name="BaseIDКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="BaseIDРасширеннаяПодсказка" id="45"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Web-service</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<BackColor>style:НедоступныеДанныеЦвет</BackColor>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="16"/>
+			<ChildItems>
+				<InputField name="WSСсылка" id="17">
+					<DataPath>Объект.WSСсылка</DataPath>
+					<ContextMenu name="WSСсылкаКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="WSСсылкаРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="WSПользователь" id="20">
+					<DataPath>Объект.WSПользователь</DataPath>
+					<ContextMenu name="WSПользовательКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="WSПользовательРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="WSПароль" id="23">
+					<DataPath>Объект.WSПароль</DataPath>
+					<PasswordMode>true</PasswordMode>
+					<ContextMenu name="WSПарольКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="WSПарольРасширеннаяПодсказка" id="25"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ИнформационныеБазы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>
