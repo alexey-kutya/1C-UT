@@ -1214,8 +1214,8 @@
 		<Metadata name="DataProcessor.ПолнотекстовыйПоискВДанных.Help" id="6da034af-0481-4a3c-aff9-c50ced6f21d4.1" configVersion="579c60649bbd63409b1e62b64000ad5300000000"/>
 		<Metadata name="DataProcessor.ПолнотекстовыйПоискВДанных.ManagerModule" id="6da034af-0481-4a3c-aff9-c50ced6f21d4.2" configVersion="0c50e65b0181644db87bef7e52ae690400000000"/>
 		<Metadata name="DataProcessor.РабочееМестоАдминистратора" id="23c95754-278e-42dd-b15e-6c6dba3459e3" configVersion="7de29a9fe5b73646b5f813550328d9e000000000"/>
-		<Metadata name="DataProcessor.РабочееМестоАдминистратора.Form.Форма" id="1d75d8c1-f654-45db-a8a8-fcfd197979f8" configVersion="658d782752baf2478d257f05575a387d00000000"/>
-		<Metadata name="DataProcessor.РабочееМестоАдминистратора.Form.Форма.Form" id="1d75d8c1-f654-45db-a8a8-fcfd197979f8.0" configVersion="6ac10339c364b747a493e053c156cadf00000000"/>
+		<Metadata name="DataProcessor.РабочееМестоАдминистратора.Form.Форма" id="1d75d8c1-f654-45db-a8a8-fcfd197979f8" configVersion="3ca8a20070d49f4cbdfe74e5eb773ca800000000"/>
+		<Metadata name="DataProcessor.РабочееМестоАдминистратора.Form.Форма.Form" id="1d75d8c1-f654-45db-a8a8-fcfd197979f8.0" configVersion="1039e3fa2839a94982556035ee36e5a000000000"/>
 		<Metadata name="DataProcessor.РегистрацияИзмененийДляОбменаДанными" id="78735484-b47c-4a22-a2be-8b0c4f317a8f" configVersion="84b9944bd2f23b4fabecc4b3d70bd46a00000000">
 			<Metadata name="DataProcessor.РегистрацияИзмененийДляОбменаДанными.Attribute.НастройкаВариантНомераСообщения" id="32fddd18-3c5f-498a-a9e3-b5e722046eab"/>
 			<Metadata name="DataProcessor.РегистрацияИзмененийДляОбменаДанными.Attribute.НастройкаАдресВнешнейОбработкиЗапросов" id="8d7f6b9f-d70f-4c59-8cd7-b78b9b336b56"/>
