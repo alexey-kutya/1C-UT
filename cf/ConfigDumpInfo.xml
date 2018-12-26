@@ -790,8 +790,8 @@
 		<Metadata name="CommonModule.СтандартныеПодсистемыСервер.Module" id="3247e64e-b57e-4c33-8086-7ab93c5b6371.0" configVersion="9d4fa0388a49e043ab7cd326fdc9a1e300000000"/>
 		<Metadata name="CommonModule.СтроковыеФункцииКлиентСервер" id="e5dca369-dc9a-4332-a509-f734b8787e13" configVersion="130da1f166589542b1532b2a2cd5015d00000000"/>
 		<Metadata name="CommonModule.СтроковыеФункцииКлиентСервер.Module" id="e5dca369-dc9a-4332-a509-f734b8787e13.0" configVersion="0d193fb7cf69e44d9b345aa8bda9e8dc00000000"/>
-		<Metadata name="CommonModule.ТИ" id="9ccc387d-0009-4aee-a652-97cb226697a8" configVersion="cad76eeacb501a49b3b19fea9eda65f100000000"/>
-		<Metadata name="CommonModule.ТИ.Module" id="9ccc387d-0009-4aee-a652-97cb226697a8.0" configVersion="7ed379b1ba0a154b91c02461d986163800000000"/>
+		<Metadata name="CommonModule.ТИ" id="9ccc387d-0009-4aee-a652-97cb226697a8" configVersion="8c22b3c62b3f0c4c867623c61d5cb4d600000000"/>
+		<Metadata name="CommonModule.ТИ.Module" id="9ccc387d-0009-4aee-a652-97cb226697a8.0" configVersion="f368292a0516a7479f3342e6abb9d9b700000000"/>
 		<Metadata name="CommonModule.Универсальные" id="2e936876-bfbb-4215-807e-547ad3bd2029" configVersion="d9a4a60a94e6b44992ad38dc3e9c254300000000"/>
 		<Metadata name="CommonModule.Универсальные.Module" id="2e936876-bfbb-4215-807e-547ad3bd2029.0" configVersion="b291107b58c85242b36e4c8fb7f5ce0600000000"/>
 		<Metadata name="CommonModule.УправлениеДоступомСППР" id="a481e9a1-1d65-460c-a4b4-62368bf955f1" configVersion="e88dda7a9d206b4f8277e1bd7f26d69f00000000"/>
@@ -1434,8 +1434,8 @@
 		<Metadata name="Document.Обращение.Form.ФормаДокумента.Form" id="333c82b9-3d69-48d5-a43f-16a1784014ec.0" configVersion="c37ed8a9804ba64caa969200f762b69300000000"/>
 		<Metadata name="Document.Обращение.Form.ФормаСписка" id="c27020ce-58b0-4204-a33f-2a1ddac75ca1" configVersion="1557d94b36da2b4d9b4dd34d81e92afc00000000"/>
 		<Metadata name="Document.Обращение.Form.ФормаСписка.Form" id="c27020ce-58b0-4204-a33f-2a1ddac75ca1.0" configVersion="53b43b7d5abfcc43884d16abfcd7576c00000000"/>
-		<Metadata name="Document.Обращение.Form.ФормаСпискаУпрощенная" id="646696e9-4eba-4649-9e11-1c28ef94c16c" configVersion="e20886663c62ce43b4527b629b9c082700000000"/>
-		<Metadata name="Document.Обращение.Form.ФормаСпискаУпрощенная.Form" id="646696e9-4eba-4649-9e11-1c28ef94c16c.0" configVersion="fa9338c1e419c548bd2054ee56b28cac00000000"/>
+		<Metadata name="Document.Обращение.Form.ФормаСпискаУпрощенная" id="646696e9-4eba-4649-9e11-1c28ef94c16c" configVersion="eb0539cb51be8f49ab093ef96ceb3c1300000000"/>
+		<Metadata name="Document.Обращение.Form.ФормаСпискаУпрощенная.Form" id="646696e9-4eba-4649-9e11-1c28ef94c16c.0" configVersion="3e6ccace9a57c84dac55e0f66bf29ff000000000"/>
 		<Metadata name="Document.Обращение.ObjectModule" id="bb9aba7a-b276-4126-90b4-9e9f859ac8f8.0" configVersion="c181149c4b0ddc4c87c44dd0d301743900000000"/>
 		<Metadata name="Enum.ВариантыВажностиЗадачи" id="c39750ca-e33f-40c2-b830-119423d9a2ae" configVersion="093d18ecf3cf144f80a1e129df0da40c00000000">
 			<Metadata name="Enum.ВариантыВажностиЗадачи.EnumValue.Высокая" id="9372ff6b-27b6-48f3-a2a2-762e7c485766"/>

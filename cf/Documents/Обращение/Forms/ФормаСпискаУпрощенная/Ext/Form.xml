@@ -109,6 +109,11 @@
 					<ContextMenu name="ИнициаторКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="ИнициаторРасширеннаяПодсказка" id="21"/>
 				</LabelField>
+				<LabelField name="Категория" id="27">
+					<DataPath>Список.Категория</DataPath>
+					<ContextMenu name="КатегорияКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="КатегорияРасширеннаяПодсказка" id="29"/>
+				</LabelField>
 				<LabelField name="Состояние" id="22">
 					<DataPath>Список.Состояние</DataPath>
 					<ContextMenu name="СостояниеКонтекстноеМеню" id="23"/>
