@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
 	<VerticalScroll>useIfNecessary</VerticalScroll>
 	<AutoTime>CurrentOrLast</AutoTime>
 	<UsePostingMode>Auto</UsePostingMode>
@@ -174,13 +174,19 @@
 							<ContextMenu name="НовыеОбъектыКонтекстноеМеню" id="208"/>
 							<ExtendedTooltip name="НовыеОбъектыРасширеннаяПодсказка" id="209"/>
 						</CheckBoxField>
+						<CheckBoxField name="ЕстьФормы" id="250">
+							<DataPath>Объект.ЕстьФормы</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ЕстьФормыКонтекстноеМеню" id="251"/>
+							<ExtendedTooltip name="ЕстьФормыРасширеннаяПодсказка" id="252"/>
+						</CheckBoxField>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="Группа16" id="205">
 					<Group>Horizontal</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<BackColor>style:ФонУправляющегоПоля</BackColor>
+					<BackColor>0:5abc496c-5745-4220-9fdc-bac092717871</BackColor>
 					<ExtendedTooltip name="Группа16РасширеннаяПодсказка" id="206"/>
 					<ChildItems>
 						<CheckBoxField name="ЛюбаяБазаДляТестирования" id="202">
@@ -347,6 +353,7 @@
 									<AutoInsertNewRow>true</AutoInsertNewRow>
 									<EnableStartDrag>true</EnableStartDrag>
 									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
 									<DataPath>Объект.Изменения</DataPath>
 									<RowFilter xsi:nil="true"/>
 									<ContextMenu name="ИзмененияКонтекстноеМеню" id="80"/>
@@ -512,6 +519,7 @@
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>Объект.БазыТестирования</DataPath>
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="БазыТестированияКонтекстноеМеню" id="177"/>
@@ -599,6 +607,7 @@
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>Объект.ИзмененныеФункции</DataPath>
 							<Title>
 								<v8:item>
@@ -739,6 +748,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗагрузитьИзменения</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДобавитьВПеревыпуск" id="2">
 			<Title>
@@ -754,6 +764,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ДобавитьВПеревыпуск</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДобавитьВВыпуск" id="3">
 			<Title>
@@ -769,6 +780,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ДобавитьВВыпуск</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="БазыУстановитьФлажки" id="4">
 			<Title>
@@ -784,6 +796,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>УстановитьФлажки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="БазыСнятьФлажки" id="5">
 			<Title>
@@ -799,6 +812,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СнятьФлажки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
 </Form>
